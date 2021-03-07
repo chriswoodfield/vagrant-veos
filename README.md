@@ -16,10 +16,10 @@ To build a vagrant box for Arista vEOS, first, you need to download a file from 
 * Login
 * Click on Software Downloads (bottom left)
 * Expand EOS -> Actice Releases -> desired vEOS version -> vEOS-lab
-* Download the vmdk (example: vEOS-lab-4.21.0F.vmdk)
+* Download the vmdk (example: vEOS-lab-4.25.2F.vmdk)
 * Save the file to the packer/source/ directory as vEOS.vmdk.
 * cd packer/
-* Build the basebox: ``packer build -var "version=4.21.0F" vEOS-4-i386.json``
+* Build the basebox: ``packer build -var "version=4.25.2F" vEOS-4-i386.json``
 * The completed basebox will be in ../builds/
 
 ## Booting your first vEOS box
@@ -30,14 +30,14 @@ bash shell, enter the EOS CLI, display the EOS version, exit, and destroy the
 VM.   You can customize how your vEOS node starts up by editing the Vagrantfile
 created by ``vagrant init``.
 
-    vagrant box add --name vEOS-lab-4.21.0F ../builds/vEOS-lab-4.21.0F-virtualbox.box
+    vagrant box add --name vEOS-lab-4.25.2F ../builds/vEOS-lab-4.25.2F-virtualbox.box
     vagrant box list
 
 Create a new environment and define which box you wish to use
 
     mkdir vEOS-test
     cd vEOS-test
-    vagrant init vEOS-lab-4.21.0F
+    vagrant init vEOS-lab-4.25.2F
 
 Optionally, add any additional configuration to your Vagrantfile, then ‘up’ your VM and login
 

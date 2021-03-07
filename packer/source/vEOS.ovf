@@ -19,7 +19,7 @@
       <Info>Meta-information about the installed software</Info>
       <Product>vEOS</Product>
       <Vendor>Arista Networks</Vendor>
-      <Version>4.21.0F</Version>
+      <Version>4.25.2F</Version>
       <VendorUrl>http://www.arista.com/</VendorUrl>
     </ProductSection>
     <OperatingSystemSection ovf:id="102">

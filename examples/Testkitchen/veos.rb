@@ -14,7 +14,7 @@
 #             OR per-VM using:
 #
 # platforms:
-#   - name: vEOS-lab-4.21.0F
+#   - name: vEOS-lab-4.25.2F
 #     driver:
 #       vagrantfiles:
 #         - vagrantfiles/veos.rb
